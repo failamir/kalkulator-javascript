@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Kalkulator Sederhana</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+
+<!--
+
+function hitung(){
+
+var fungsiku = document.kalkulator;
+var x=eval(fungsiku.x.value);
+var y=eval(fungsiku.y.value);
+var pil= fungsiku.opt.value;
+if (pil == "tambah") {
+var z = x + y;
+ }else if (pil == "kurang") {
+var z = x - y;
+ } else if (pil == "kali") {
+var z = x * y;
+ } else if (pil == "bagi") {
+var z = x / y;
+ }
+ fungsiku.hasil.value = z;
+ fungsiku.x.value = "";
+ fungsiku.y.value = "";
+}
+function resetForm(){
+document.kalkulator.reset();
+}
+
+//-->
+
+</script>
+<div align="center">
+	<p>-------- Kalkulator Ku --------</p>
+	<p>--------by: failamir-------</p>
+<form name="kalkulator" action="#">
+<p>bil 1  <input type="text" name="x" /></p>
+<p>bil 2  <input type="text" name="y" /></p>
+<p>hasil  <input type="text" name="hasil" disabled="true" /></p>
+<p>operator <select name="opt"></p>
+ <option value="tambah"> + (tambah)</option>
+ <option value="kurang"> - (kurang)</option>
+ <option value="kali"> * (kali)</option>
+ <option value="bagi"> / (bagi)</option>
+</select>
+<input type="button" value="=" onClick="hitung()" />
+<input type="button" value="CLEAR" onClick="resetForm()" />
+</form>
+</body>
+</html>
